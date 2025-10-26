@@ -1,2 +1,2 @@
 Website where you can search for a flights across the world.
-Work in progress
+This is for my personal experience, work in a progress
