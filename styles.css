@@ -1,0 +1,62 @@
+
+
+body {
+      margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    }
+
+    /* Hlavní pruh */
+.navbar {
+      display: flex;
+      justify-content: space-between; /* Text vlevo, tlačítko vpravo */
+      align-items: center;
+      background-color: #212224;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    /* Nadpis vlevo */
+.navbar h1 {
+    font-size: 22px;
+    margin: 0;
+    color: #408ee0;
+ }
+
+    /* Tlačítko vpravo */
+.navbar button {
+      position: relative;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    /* Čárová animace */
+    .navbar button::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #408ee0;
+      transition: width 0.3s ease;
+      
+    }
+
+    .navbar button:hover::after {
+      width: 100%;
+    }
+
+    /* Zvýraznění při hoveru */
+    .navbar button:hover {
+      color: #408ee0;
+    }
